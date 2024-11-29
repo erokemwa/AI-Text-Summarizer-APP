@@ -20,11 +20,6 @@ This project implements a REST API that accepts text input and returns a summari
 git clone <repository-url>
 ```
 
-```
-git clone <repository-url>
-```
-
-
 2. Install dependencies:
 
 ```bash
@@ -58,8 +53,6 @@ node public/index.js
 ```bash
 curl -X POST http://localhost:3000/summarize -H "Content-Type: application/json" -d '{"text_to_summarize": "Your text here"}'
 ```
-
-
 
      http://localhost:3000/summarize
 
