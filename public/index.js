@@ -10,10 +10,10 @@ app.use(express.static('public')); // Serve static files from the 'public' direc
 
 // Handle POST requests to the '/summarize' endpoint
 app.post('/summarize', (req, res) => {
-  // get the text_to_summarize property from the request body
+  // Get the text_to_summarize property from the request body
   const text = req.body.text_to_summarize;
 
-  // call your summarizeText function, passing in the text from the request
+  // Call your summarizeText function, passing in the text from the request
   summarizeText(text)
     .then(response => {
       res.send(response); // Send the summary text as a response
